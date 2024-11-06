@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .producto {
+            position: relative;
+            width: 200px;
+            border-radius: 7px;
+            border: 2px solid gray;
+            padding: 10px;
+        }
+
+        .producto-titulo {
+            color: black;
+
+        }
+
+        .producto-descripcion {
+            color: grey;
+        }
+
+        .producto-precio {
+            color: black;
+        }
+
+        .container-descuento {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .descuento {
+
+
+            padding: 5px;
+            border-radius: 7px;
+            background-color: rgb(47, 159, 233);
+
+        }
+
+        .descuento-2 {
+            font-weight: bolder;
+            color: white;
+
+
+        }
+
+        .precio-anterior {
+            text-decoration: line-through;
+            /* tacha una palabra*/
+
+        }
+
+        button {
+            border-radius: 90px;
+            padding: 10px;
+            width: 100%;
+            background-color: rgb(255, 213, 24);
+        }
+
+        .cuotas {
+            position: absolute;
+            top: 110px;
+            padding: 2px;
+            border-radius: 7px;
+            background-color: rgb(56, 169, 235);
+            font-weight: bolder;
+            color: white;
+        }
+
+        .cuotas-18 {
+            font-weight: bolder;
+            font-size: 1.5em;
+            color: white;
+            border-radius: 1px;
+            padding: 1px;
+        }
+
+        .cantidad-cuotas {
+            display: flex;
+            gap: 5px;
+        }
+
+        .cuotas-sininteres {
+            padding: 1px;
+            font-size: 0.9em;
+
+
+        }
+
+        .hasta {
+            padding: 1px;
+            font-size: 0.6em;
+            height: 9px;
+        }
+
+        .vista-color {
+            color: #0097ff;
+        }
+
+        .ojo {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background-color: rgb(197, 197, 197);
+            width: 150px;
+        }
+
+        .container-ojo {
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+        }
+
+        .producto:hover .container-ojo {
+            opacity: 1;
+        }
+
+        .corazon {
+            display: flex;
+            justify-content: right;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="producto">
+            <div class="corazon">
+                <img src="corazon.svg" width="18px" alt="">
+            </div>
+            <div>
+                <img src="mesa.webp" width="100%" alt="">
+            </div>
+            <div class="cuotas">
+                <div class="hasta">
+                    <span>
+                        Hasta
+                    </span>
+
+                </div>
+                <div class="cantidad-cuotas">
+                    <span class="cuotas-18">
+                        18
+                    </span>
+                    <span class="cutas-sininteres">
+                        sin <br>interes
+                    </span>
+                </div>
+            </div>
+            <div class="container-ojo">
+                <div class="ojo">
+                    <div>
+                        <img src="eye(1).png" width="25px" alt="">
+                    </div>
+                    <div class="vista-color">
+                        <p>vista rapida</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="producto-titulo">
+                <span>
+                    muebles gacela
+                </span>
+            </div>
+            <div class="producto-descripcion">
+                <span>
+                    Mesa comedor redonda
+                    120x120x78 Cm Muebles gacela
+                </span>
+            </div>
+            <div class="container-descuento">
+                <div class="descuento">
+                    <span class="descuento-2">
+                        -25%
+                    </span>
+                </div>
+                <div class="precio-anterior">
+                    <span>
+                        $197.000
+                    </span>
+                </div>
+            </div>
+            <div class="producto-precio">
+                <span>
+                    $147.750
+                </span>
+            </div>
+            <div class="boton">
+                <button>
+                    agregar al carrito
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
