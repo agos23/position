@@ -7,6 +7,7 @@
     <title>evaluacion</title>
 </head>
 <style>
+    /*
     .fondo {
         background-color: gray;
         top: 0px;
@@ -14,172 +15,228 @@
         right: 0px;
         height: 1000px;
     }
+    */
 
     .tarjetas {
         display: flex;
-        justify-content: space-between;
-        position:relative;
+        justify-content: center;
+        position: relative;
+        gap: 10px;
 
 
     }
 
     .tarjeta-1 {
-        width: 200px;
-        background-color: rgb(207, 203, 166);
+        position: relative;
+        background-color: white;
         color: gray;
         border-radius: 20px;
-        border:black;
-        padding:20px;
-        gap:30px;
-        top:10px;
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
-
+        border: solid black 2px;
+        padding: 25px;
+        width: 300px;
 
     }
 
-    .ofline-1 {
+    .ofline {
         display: flex;
-        color: green;
-        justify-content: flex-end;
-        padding: 10px;
-        gap: 10px;
+        background-color: green;
+        border-radius: 7px;
         position: absolute;
-
+        left: 270px;
 
     }
 
     .imagen-1 {
-        width:10px;
-        padding: 10px;
+        padding: 15px;
         border-radius: 20px;
         gap: 20px;
     }
 
-    .infousuario-1{
-    padding: 10px;
-    gap: 10px;
-    color: gray;
+    .infousuario-1 {
+        color: gray;
+        margin: 20px;
     }
 
+    .logos {
+        display: flex;
+        justify-content: space-around;
+    }
 
-
+    .nombre-1 {
+        color: black;
+    }
 
     .tarjeta-2 {
-        width: 200px;
-        border-color: black;
-        background-color: rgb(207, 203, 166);
+        position: relative;
+        background-color: white;
         color: gray;
         border-radius: 20px;
-        padding: 50px;
-        gap:30px;
-        top:10px;
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
+        border: solid black 2px;
+        padding: 25px;
+        width: 300px;
+
     }
 
-    .ofline-2 {
+    .online {
         display: flex;
-        color: green;
-        justify-items: flex-end;
-        padding: 10px;
-        gap:10px;
+        background-color: red;
+        border-radius: 7px;
         position: absolute;
+        left: 270px;
     }
 
     .imagen-2 {
-        padding:10px;
-        width:10px;
+        padding: 15px;
         border-radius: 20px;
         gap: 20px;
     }
-    .infousuario-2{
-    padding: 10px;
-    gap: 10px;
-    color: gray;
+
+    .infousuario-2 {
+        color: gray;
+        padding: 20px;
     }
-.nombre-1{
-    color: black;
-}
-.nombre-2{
-    color: black;
-}
+
+    .logos-2 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nombre-2 {
+        color: black;
+    }
+
+    .contactar-color {
+        color: white;
+    }
+
+    .boton {
+        background-color: deepskyblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        border-radius: 40px;
+        border: 2px solid deepskyblue;
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+    }
 </style>
 
 <body>
     <main>
 
-        <div class="fondo">
 
-            <div class="tarjetas">
 
-                <div class="tarjeta-1">
+        <div class="tarjetas">
 
-                    <div class="ofline-1">
-                        <button> ofline </button>
-                    </div> 
+            <div class="tarjeta-1">
 
-                    <div class="infousuario-1">
+                <div class="ofline">
+                    <span> ofline <span>
+                </div>
 
-                        <div class="imagen-1">
-                        <img src="duki.jpeg" alt="">
+                <div class="infousuario-1">
+
+                    <div class="imagen-1">
+                        <img src="duki.jpeg" width="100%" alt="">
                     </div>
 
-                        <div class="nombre-1">
-                            <span>
-                                Mauro lombardo
-                            </span>
-                        </div>
+                    <div class="nombre-1">
+                        <span>
+                            Mauro lombardo
+                        </span>
+                    </div>
 
-                        <div>
-                            <span>
-                                desarrollador web frontend
-                            </span>
-                        </div>
-                        <div>
-                            apacionado por crear experincias webincreibles para toda la comunidad de rio negro
-                        </div>
+                    <div>
+                        <span>
+                            desarrollador web frontend
+                        </span>
                     </div>
                     <div>
+                        apacionado por crear experincias webincreibles para toda la comunidad de rio negro
+                    </div>
+                </div>
+                <div class="logos">
+
+                    <div>
                         <picture>
-                            <img src="" width="" alt="">
+                            <img src="twitter.png" width="20px" alt="">
                         </picture>
                     </div>
 
-
-                </div>
-
-                <div class="tarjeta-2">
-                    <div class="ofline2">
-                        <button> ofline </button>
-                    </div>
-                    
-                    <div class="imagen-2">
-                        <img src="emilia.jpeg" alt="">
+                    <div>
+                        <picture>
+                            <img src="in.png" width="20px" alt="">
+                        </picture>
                     </div>
 
-                    <div class="info-usuario">
-
-                        <div class="nombre-2">
-                            <span>
-                                Mina murray
-                            </span>
-                        </div>
-
-                        <div>
-                            <span>
-                                Backend developer experiencia desarrollando micro servicios y servicios REST experiencia en aps
-                            </span>
-                        </div>
-                        <div>
-                            apacionado por crear experincias webincreibles para toda la comunidad de rio negro
-                        </div>
+                    <div>
+                        <picture>
+                            <img src="github.png" width="20px" alt="">
+                        </picture>
                     </div>
                 </div>
             </div>
+
+            <div class="tarjeta-2">
+
+                <div class="online">
+                    <span> online <span>
+                </div>
+
+                <div class="infousuario-2">
+
+                    <div class="imagen-2">
+                        <img src="emilia.jpeg" width="100%" alt="">
+                    </div>
+
+                    <div class="nombre-2">
+                        <span>
+                            Emilia mernes
+                        </span>
+                    </div>
+
+                    <div>
+                        <span>
+                            desarrollador web frontend
+                        </span>
+                    </div>
+                    <div>
+                        apacionado por crear experincias webincreibles para toda la comunidad de rio negro
+                    </div>
+                </div>
+                <div class="logos-2">
+
+                    <div>
+                        <picture>
+                            <img src="twitter.png" width="20px" alt="">
+                        </picture>
+                    </div>
+
+                    <div>
+                        <picture>
+                            <img src="in.png" width="20px" alt="">
+                        </picture>
+                    </div>
+
+                    <div>
+                        <picture>
+                            <img src="github.png" width="20px" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+
+
+        <button class="boton">
+            <img src="correo.png" width="20px" alt="">
+            <p class="contactar-color"> contactar</p>
+        </button>
+
     </main>
 </body>
 
