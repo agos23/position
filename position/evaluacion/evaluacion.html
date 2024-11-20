@@ -18,108 +18,78 @@
     */
 
     .tarjetas {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        gap: 10px;
+        display: flex; /* lo utilice para poder otorgarle una posicion a ambas tarjetas*/
+        justify-content: center;/* lo utilice para colocar las tarjetas al centro*/
+        position: relative;/* para que las tarjetas queden fijas en el navegador*/
+        gap: 10px;/*utilice un gap separar a ambas tarjetas*/
 
 
     }
+    .tarjeta {
+        position: relative;/* para que la tarjeta se quede en una posicion la cual le otorgamos desde el css*/
+        background-color: white;/* para poder otorgarle color a el fondo de la tarjeta */
+        color: gray; /* para darle un color a la letra de la informacion del usuario */
+        border-radius: 20px; /* para darle un borde de un radio de 20px a la tarjeta*/
+        border: solid black 2px;/* para darle un borde a nuestra tarjeta ,en este caso borde negro*/
+        padding: 25px; /* es para darle un borde o espacio  de 25px a la tarjeta*/
+        width: 300px; /* un width para darle a mi tarjeta un tamaño */
 
-    .tarjeta-1 {
-        position: relative;
-        background-color: white;
-        color: gray;
-        border-radius: 20px;
-        border: solid black 2px;
-        padding: 25px;
-        width: 300px;
 
     }
 
     .ofline {
-        display: flex;
-        background-color: green;
-        border-radius: 7px;
-        position: absolute;
-        left: 270px;
+        display: flex; /* para colocarle un lugar a el ofline*/
+        background-color: green; /* para colocarle un color de fondo a mi ofline */
+        border-radius: 7px; /* para darle un borde de un radio de 7px a este ofline */
+        position: absolute; /* nos colocara el ofline en una posicion especifica*/
+        left: 270px; /* un left que va atrabajar con el display flex para colocar el ofline mas a la derecha */
 
     }
 
-    .imagen-1 {
-        padding: 15px;
-        border-radius: 20px;
-        gap: 20px;
+    .imagen {
+        padding: 15px; /*le otorga un espacio a la imagen */
+        border-radius: 20px;/* un border radius para darle un borde de 20 px a nuestra img */
+        gap: 20px;/* para darle un espacio de 20px a imagen de el resto de elementos*/
     }
 
-    .infousuario-1 {
-        color: gray;
-        margin: 20px;
+    .infousuario{
+        color: rgb(128, 128, 128); /* le coloca un color gris a la letra de la informacion del usuario */
+        margin: 20px; /* le establece un margen a los cuatro lados de la info de un tamaño de 20px*/
     }
 
     .logos {
-        display: flex;
-        justify-content: space-around;
+        display: flex; /* para colocarle un lugar a los logos */
+        justify-content: space-around; /* sirve para separar los logos */
     }
 
-    .nombre-1 {
-        color: black;
-    }
-
-    .tarjeta-2 {
-        position: relative;
-        background-color: white;
-        color: gray;
-        border-radius: 20px;
-        border: solid black 2px;
-        padding: 25px;
-        width: 300px;
-
+    .nombre {
+        color: black;/*para colocarle color negro al nombre del primer usuario */
     }
 
     .online {
-        display: flex;
-        background-color: red;
-        border-radius: 7px;
-        position: absolute;
-        left: 270px;
+        display: flex; /* para otorgarle lugar a online */
+        background-color: red; /* para colocarle color al fondo de online*/
+        border-radius: 7px; /* para darle un borde a online de un radio de 7px*/
+        position: absolute;/* nos colocara el online en una posicion especifica*/
+        left: 270px;/* un left que va atrabajar con el display flex para colocar el ofline mas a la derecha */
     }
 
-    .imagen-2 {
-        padding: 15px;
-        border-radius: 20px;
-        gap: 20px;
-    }
-
-    .infousuario-2 {
-        color: gray;
-        padding: 20px;
-    }
-
-    .logos-2 {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .nombre-2 {
-        color: black;
-    }
 
     .contactar-color {
-        color: white;
+        color: white; /* para poner de color blanco la palabra contactar*/
     }
 
     .boton {
-        background-color: deepskyblue;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 5px;
-        border-radius: 40px;
-        border: 2px solid deepskyblue;
-        position: fixed;
-        bottom: 20px;
-        right: 10px;
+        background-color: deepskyblue;/* para colocarle un color de fondo a el boton */
+        display: flex; /* para colocarle un lugar a el boton*/
+        justify-content: space-between;/* para separar los elementos del boton*/
+        align-items: center; /* para aliñar los elmentos de boton al centro*/
+        gap: 5px; /* para darle espacio al boton de los demas elmentos*/
+        border-radius: 40px; /* para darle al boton un borde de un radio de 40px*/
+        border: 2px solid deepskyblue;/* para darle al boton un borde color celeste de 2px*/
+        position: fixed;/* para que le boton tenga una posicion fija*/
+        bottom: 20px; /* para darle un espacio de abajo a el boton de 20px*/
+        right: 10px; /*para darle un espacio a la derecha de 10 px*/
     }
 </style>
 
@@ -128,50 +98,50 @@
 
 
 
-        <div class="tarjetas">
+        <div class="tarjetas"> <!-- class tarjetas para colocar los class hijos que son tarjeta 1 y tarjeta 2 -->
 
-            <div class="tarjeta-1">
+            <div class="tarjeta"> <!-- class tarjeta-1 para hacer la primer tarjeta  la cual tiene todo lo que contiene el html de la primera tarjeta-->
 
-                <div class="ofline">
+                <div class="ofline"><!-- colocamos una class llamada ofline -->
                     <span> ofline <span>
                 </div>
 
-                <div class="infousuario-1">
+                <div class="infousuario"> <!-- creamos una class llamada infousuario la cual usaremos para colocar la informacion de la primer tarjeta -->
 
-                    <div class="imagen-1">
+                    <div class="imagen"> <!-- colocamos una clase imageb-1 para la primer tarjeta ,la cual contiena una img-->
                         <img src="duki.jpeg" width="100%" alt="">
                     </div>
 
-                    <div class="nombre-1">
+                    <div class="nombre"> <!-- puse una class nombre-1 para colocarle un color negro a el primer nombre -->
                         <span>
                             Mauro lombardo
                         </span>
                     </div>
 
-                    <div>
+                    <div> <!-- para colocar informacion del segundo usuario-->
                         <span>
                             desarrollador web frontend
                         </span>
                     </div>
-                    <div>
+                    <div> <!-- para colocar informacion del segundo usuario-->
                         apacionado por crear experincias webincreibles para toda la comunidad de rio negro
                     </div>
                 </div>
                 <div class="logos">
 
-                    <div>
+                    <div> <!-- colocamos un picture para colocar la imagen logo de twitter-->
                         <picture>
                             <img src="twitter.png" width="20px" alt="">
                         </picture>
                     </div>
 
-                    <div>
+                    <div> <!-- colocamos un picture para colocar la imagen logo de IN-->
                         <picture>
                             <img src="in.png" width="20px" alt="">
                         </picture>
                     </div>
 
-                    <div>
+                    <div> <!-- colocamos un picture para colocar la imagen logo de github-->
                         <picture>
                             <img src="github.png" width="20px" alt="">
                         </picture>
@@ -179,62 +149,62 @@
                 </div>
             </div>
 
-            <div class="tarjeta-2">
+            <div class="tarjeta"> <!-- puse una class tarjeta-2 la cual tiene todo lo que contiene el html de la segunda tarjeta -->
 
                 <div class="online">
-                    <span> online <span>
+                    <span> online <span> <!-- una class online para que se muestre en la tarjeta numero 2-->
                 </div>
 
-                <div class="infousuario-2">
+                <div class="infousuario"> <!-- una class infousuario-2 para colocar la informacion que va a ir en la segunda tarjeta -->
 
-                    <div class="imagen-2">
+                    <div class="imagen"> <!-- colocamos una clase imagen-2 para la segunda tarjeta ,la cual contiena una img-->
                         <img src="emilia.jpeg" width="100%" alt="">
                     </div>
-
-                    <div class="nombre-2">
+                    <div class="nombre"> <!-- una class "nombre-2" para colocarle un color al nombre -->
                         <span>
                             Emilia mernes
                         </span>
                     </div>
 
-                    <div>
+                    <div> <!-- para colocar informacion del segundo usuario-->
                         <span>
-                            desarrollador web frontend
+                            desarrollador web frontend 
                         </span>
                     </div>
-                    <div>
-                        apacionado por crear experincias webincreibles para toda la comunidad de rio negro
+                    <div> <!-- para colocar informacion del segundo usuario -->
+                        apacionado por crear experincias web increibles para toda la comunidad de rio negro
                     </div>
                 </div>
-                <div class="logos-2">
+                <div class="logos"> <!-- class logos-2 para colocarlas imagenes de logos de la segunda tarjeta  -->
 
-                    <div>
+                    <div> <!-- colocamos un picture para colocar la imagen logo de twitter-->
                         <picture>
                             <img src="twitter.png" width="20px" alt="">
                         </picture>
                     </div>
 
-                    <div>
+                    <div> <!-- colocamos un picture para colocar la imagen logo de IN-->
                         <picture>
                             <img src="in.png" width="20px" alt="">
                         </picture>
                     </div>
 
-                    <div>
+                    <div> <!-- colocamos un picture para colocar la imagen logo de github-->
                         <picture>
                             <img src="github.png" width="20px" alt="">
                         </picture>
                     </div>
                 </div>
             </div>
-
+            
+            </div>
 
         </div>
 
 
-        <button class="boton">
-            <img src="correo.png" width="20px" alt="">
-            <p class="contactar-color"> contactar</p>
+        <button class="boton"> <!--una class llamada "boton" para colocarle una imagen y una clase "contactar-color"-->
+            <img src="correo.png" width="20px" alt=""> <!-- img para poder colocar una imagen de un logo de correo con un tamañode 20px-->
+            <p class="contactar-color"> contactar</p> <!-- una clase "contactar-color" para luego en el css colocarle un color a este boton-->
         </button>
 
     </main>
